@@ -1,0 +1,126 @@
+<html>
+    <head>
+        <title>Shopping Cart</title>
+        <script>
+function oncart()
+{
+  var check=false;
+  var cookievalue="";
+
+if(document.getElementById("b1").checked)
+{
+check=true;
+var quantity=document.getElementById("q1").value;
+var price=300;
+var total=(price*quantity);
+cookievalue+=":Girls Pink Bag,"+price+","+quantity+","+total;
+}
+if(document.getElementById("b2").checked)
+{
+check=true;
+var quantity=document.getElementById("q2").value;
+var price=400;
+var total=(price*quantity);
+cookievalue+=":Boys Blue Bag,"+price+","+quantity+","+total;
+
+}
+if(document.getElementById("b3").checked)
+{
+check=true;
+var quantity=document.getElementById("q3").value;
+var price=500;
+var total=(price*quantity);
+cookievalue+=":Bheem Bag,"+price+","+quantity+","+total;
+
+}
+if(document.getElementById("b4").checked)
+{
+check=true;
+var quantity=document.getElementById("q4").value;
+var price=50;
+var total=(price*quantity);
+cookievalue+=":Note Books(set of 2),"+price+","+quantity+","+total;
+}
+if(document.getElementById("b5").checked)
+{
+check=true;
+var quantity=document.getElementById("q5").value;
+var price=50;
+var total=(price*quantity);
+cookievalue+=":Color Pencil,"+price+","+quantity+","+total;
+}
+if(document.getElementById("b6").checked)
+{
+check=true;
+var quantity=document.getElementById("q6").value;
+var price=80;
+var total=(price*quantity);
+cookievalue+=":Pencil Box,"+price+","+quantity+","+total;
+}
+if(document.getElementById("b7").checked)
+{
+check=true;
+var quantity=document.getElementById("q7").value;
+var price=200;
+var total=(price*quantity);
+cookievalue+=":Angry Bird LunchBox,"+price+","+quantity+","+total;
+}
+if(document.getElementById("b8").checked)
+{
+check=true;
+var quantity=document.getElementById("q8").value;
+var price=150;
+var total=(price*quantity);
+cookievalue+=":Lunch Box,"+total;
+}
+if(document.getElementById("b9").checked)
+{
+check=true;
+var quantity=document.getElementById("q9").value;
+var price=50;
+var total=(price*quantity);
+cookievalue+=":Eraser(set of 4),"+total;
+}
+if(!check)
+{
+alert("No item selected");
+}
+else
+{
+document.cookie=cookievalue;
+window.location="bill.html";
+}
+}
+        </script>
+    </head>
+    <body>
+        
+        <table border="2" width="1450" align="center">
+            <tr>
+                <td width="1200" bgcolor="aqua"><h1 align="center">School Plaza</h1></td>
+                <td><img src="C:\Users\ADMIN\Pictures\Screenshots\student.png" width="250"height="150"></td>
+            </tr>
+        </table>
+        <table border="2">
+            <tr bgcolor="pink">
+                <td width="300">Categories
+                </td>
+                <td width="1420" align="center">New Products
+                </td>
+            </tr>
+            <tr bgcolor="pink">
+                <td>School Bags<hr><br>Watter Bottel<hr><br>Lunch Box<hr><br>Compaas Box<hr><br>Stationary<hr><br>Files & Folders<hr><br>Books<hr><br>Colors</td>
+                <td><table border="1">
+                    <tr><td width="473.33" align="center"><img src="C:\Users\ADMIN\Downloads\spink bag.jpg" width="100" height="100"><br>Girls Pink Bag<br>Rs.300<br><input type="checkbox" name="cart" value="cart">Add to cart<br><input type="textbox" name="qua">Quantity</td><td width="473.33" align="center"><img src="C:\Users\ADMIN\Downloads\sboy bag.jpg" width="100" height="100"><br>Boys Blue Bag<br>Rs.400<br><input type="checkbox" name="cart" value="cart">Add to cart<br><input type="textbox" name="qua">Quantity</td><td width="473.33" align="center"><img src="C:\Users\ADMIN\Downloads\sboy bag.jpg" width="100" height="100"><br>Bheem Bag<br>Rs.500<br><input type="checkbox" name="cart" value="cart">Add to cart<br><input type="textbox"name="qua">Quantity</td></tr>
+                    <tr><td width="473.33" align="center"><img src="C:\Users\ADMIN\Downloads\pencil box'.webp" width="100" height="100"><br>Note Books<br>Rs.50(set of 2)<br><input type="checkbox" name="cart" value="cart">Add to cart<br><input type="textbox" name="qua">Quantity</td><td width="473.33" align="center"><img src="C:\Users\ADMIN\Downloads\pencil box'.webp" width="100" height="100"><br>Color Pencil<br>Rs.50<br><input type="checkbox" name="cart" value="cart">Add to cart<br><input type="textbox" name="qua">Quantity</td><td width="473.33" align="center"><img src="C:\Users\ADMIN\Downloads\pencil box'.webp" width="100" height="100"><br>Pencil Box<br>Rs.80<br><input type="checkbox" name="cart" value="cart">Add to cart<br><input type="textbox"name="qua">Quantity</td></tr>
+                    <tr><td width="473.33" align="center"><img src="C:\Users\ADMIN\Downloads\angry.jpg" width="100" height="100"><br>Angry Bird LunchBox<br>Rs.200<br><input type="checkbox" name="cart" value="cart">Add to cart<br><input type="textbox" name="qua">Quantity</td><td width="473.33" align="center"><img src="C:\Users\ADMIN\Downloads\lunch box.jpg" width="100" height="100"><br>Lunch Box<br>Rs.150<br><input type="checkbox" name="cart" value="cart">Add to cart<br><input type="textbox" name="qua">Quantity</td><td width="473.33" align="center"><img src="C:\Users\ADMIN\Downloads\eraser.jpg" width="100" height="100"><br>Eraser<br>Rs.50(set of 4)<br><input type="checkbox" name="cart" value="cart">Add to cart<br><input type="textbox"name="qua">Quantity</td></tr>
+
+                    </table>
+                    <form name="cart" onclick="oncart()">
+                        <input type="button" id="cart" value="cart" >
+                    </form>
+                </td>
+            </tr>
+       </table>
+    </body>
+</html>

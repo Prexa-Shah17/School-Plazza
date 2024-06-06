@@ -1,0 +1,91 @@
+<script>
+    function oncart()
+    {
+      var check=false;
+      var cookievalue="";
+    
+    if(document.getElementById("b1").checked)
+    {
+    check=true;
+    var quantity=document.getElementById("q1").value;
+    var price=300;
+    var total=(price*quantity);
+    cookievalue+=":Girls Pink Bag,"+price+","+quantity+","+total;
+    }
+    if(document.getElementById("b2").checked)
+    {
+    check=true;
+    var quantity=document.getElementById("q2").value;
+    var price=400;
+    var total=(price*quantity);
+    cookievalue+=":Boys Blue Bag,"+price+","+quantity+","+total;
+    
+    }
+    if(document.getElementById("b3").checked)
+    {
+    check=true;
+    var quantity=document.getElementById("q3").value;
+    var price=500;
+    var total=(price*quantity);
+    cookievalue+=":Bheem Bag,"+price+","+quantity+","+total;
+    
+    }
+    if(document.getElementById("b4").checked)
+    {
+    check=true;
+    var quantity=document.getElementById("q4").value;
+    var price=50;
+    var total=(price*quantity);
+    cookievalue+=":Note Books,"+price+","+quantity+","+total;
+    }
+    if(document.getElementById("b5").checked)
+    {
+    check=true;
+    var quantity=document.getElementById("q5").value;
+    var price=50;
+    var total=(price*quantity);
+    cookievalue+=":Color Pencil,"+price+","+quantity+","+total;
+    }
+    if(document.getElementById("b6").checked)
+    {
+    check=true;
+    var quantity=document.getElementById("q6").value;
+    var price=80;
+    var total=(price*quantity);
+    cookievalue+=":Pencil Box,"+price+","+quantity+","+total;
+    }
+    if(document.getElementById("b7").checked)
+    {
+    check=true;
+    var quantity=document.getElementById("q7").value;
+    var price=200;
+    var total=(price*quantity);
+    cookievalue+=":Angry Bird LunchBox,"+price+","+quantity+","+total;
+    }
+    if(document.getElementById("b8").checked)
+    {
+    check=true;
+    var quantity=document.getElementById("q8").value;
+    var price=150;
+    var total=(price*quantity);
+    cookievalue+=":Lunch Box,"+total;
+    }
+    if(document.getElementById("e1").checked)
+    {
+    check=true;
+    var quantity=document.getElementById("q9").value;
+    var price=50;
+    var total=(price*quantity);
+    cookievalue+=":Eraser(set of 4),"+total;
+    }
+    if(!check)
+    {
+    alert("No item selected");
+    }
+    else
+    {
+    document.cookie=cookievalue;
+    window.location="bill.html";
+    }
+    }
+    </script>
